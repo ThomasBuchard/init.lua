@@ -46,7 +46,7 @@ return require('packer').startup(function(use)
   use("tpope/vim-fugitive")
   use("nvim-treesitter/nvim-treesitter-context");
 
-  use {
+   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
 	  requires = {
@@ -68,6 +68,15 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+
+ use {
+	  'rcarriga/nvim-dap-ui',
+	  requires = {
+          {'mfussenegger/nvim-dap'},
+	  }
+  }
+
+  use("folke/neodev.nvim")
 
   use("folke/zen-mode.nvim")
   use("github/copilot.vim")

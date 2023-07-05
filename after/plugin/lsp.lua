@@ -8,6 +8,7 @@ lsp.ensure_installed({
 })
 
 -- Fix Undefined global 'vim'
+vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 lsp.nvim_workspace()
 
 
